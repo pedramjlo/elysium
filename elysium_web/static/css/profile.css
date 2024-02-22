@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+
+    /*
+    overflow: hidden;
+    background-attachment: fixed;
+    position: relative;
+    */
+}
+
+.unauth-navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 0.1px solid #83748D;
+    padding-top: 0;
+
+    background-color: #83748D;
+}
+
+#logo
+{
+    padding-left: 80px;
+    font-family: Cardo;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.unauth-navbar #about a {
+    padding-right: 80px;
+    margin-right: 40px; /* Adjust the value as needed */
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+#feed-icon {
+    transform: translateX(-450px);
+}
+
+
+
+ul
+{
+    list-style-type: none;
+    font-family: Roboto;
+}
+
+
+.user-data
+{
+    top: 120px;
+    margin-left: 180px;
+}
+
+
+#avatar-sett
+{
+    margin-top: 50px;
+    margin-left: 170px;
+}
+
+.dotted-line {
+    border-top: 1px dotted #000; /* Adjust color as needed */
+    width: 30%; /* Adjust width as needed */
+}
+
+h4
+{
+    font-weight: bold;
+}
+
+
+#delete_acc
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: red;
+    border: 0.5 solid white;
+    color: white;
+    font-weight: bold;
+
+    height: 50px;
+    width: 150px;
+}
+
+
+h3
+{
+    margin-left: 280px;
+    transform: translateY(-80px);
+}
+
+#change-email 
+{
+    transform: translateX(250px);
+}
+
+.profile-stat
+{
+    margin-top: -390px;
+    margin-left: 760px;
+
+    border: 1px solid gray;
+    width: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-stat ul a
+{
+    text-decoration: none;
+    transform: translateX(-10px);
+}
+
+#create
+{
+    position: absolute;
+    top: 180px;
+    right: 400px;
+
+    height: 30px;
+    width: 100px;
+
+
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+    background-color: green;
+    color: white;
+
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+
+
+#delete_all
+{
+    position: absolute;
+    top: 180px;
+    right: 150px;
+
+    height: 30px;
+    width: 100px;
+
+
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+    background-color: red;
+    color: white;
+    z-index: 0;
+}

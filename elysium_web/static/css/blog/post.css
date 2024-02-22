@@ -1,0 +1,111 @@
+
+
+.post-body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#post-title
+{
+    float: left;
+}
+
+#post-content
+{
+    border: 1px solid #000;  /* Change as needed */
+    padding: 10px;  /* Change as needed */
+    width: 60%;  /* Change as needed */
+    margin: 0 auto;  /* Centers the box */
+}
+
+.dotted-line {
+    border-top: 1px dotted #000; /* Adjust color as needed */
+    width: 30%; /* Adjust width as needed */
+}
+
+.dotted-line2 {
+    padding-left: 60%;
+    border-top: 1px dotted white; /* Adjust color as needed */
+    width: 40%; /* Adjust width as needed */
+}
+
+
+
+.comments {
+    margin: 20px 0 20px 250px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5; /* Lighter background for better readability */
+    width: 60%;
+    color: #333; /* Darker text color for better contrast */
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff; /* White background for individual comments */
+    border-radius: 5px; /* Rounded corners for individual comments */
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #007BFF; /* Blue color for the author's name */
+}
+
+.no-comments {
+    text-align: center;
+    color: #999;
+    font-style: italic; /* Italic text for 'No comments yet.' */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 10px;
+    padding-left: 70px;
+}
+
+form label {
+    color: #333; /* Darker color for better contrast */
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px; /* Padding for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+button {
+    background-color: #007BFF; /* Blue background for the button */
+    color: #fff; /* White text for the button */
+    border: none;
+    padding: 5px 10px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Cursor pointer for the button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue background when hovering over the button */
+}
+
+
+.comment-meta {
+    font-size: 0.8em; /* Smaller font size for meta information */
+    color: #777; /* Lighter color for meta information */
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #007BFF; /* Blue color for the author's name */
+}
+
+.comment-time {
+    color: #999; /* Lighter color for the time */
+}

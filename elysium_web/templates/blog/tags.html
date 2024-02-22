@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog/tags.css' %}">
+
+
+<div class="all-tags">
+    <div>
+        {% for tag in tags %}
+
+        <a href="{% url 'tag_detail' tag.slug %}">{{ tag }}</a>
+        
+        {% empty %}
+        <p>No tags available.</p>
+        {% endfor %}
+
+        {% if user.is_authenticated %}
+        <a href="/create_post" id="create" style="text-decoration: none;">Create a post</a>
+        <a href="{% url 'profile' user.pk %}" id="profile-button">Go To My Profile</a>
+        {% else %}
+        <a href="/login" style="text-decoration: none;">Log in to post</a>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load the base CSS file -->
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+
+
+    {% if user.is_authenticated %}
+    <div class="unauth-navbar">
+
+        <a href="/feed" id="logo">ELYSIUM</a>
+    
+
+    
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">{{ request.user.username }}</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="{% url 'profile' pk=user.pk %}">Go to profile</a>
+              <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+            </div>
+        </div>
+          
+    </div>
+    
+    {% else %}
+
+    <div class="unauth-navbar">
+
+      <a href="/feed" id="logo">ELYSIUM</a>
+  
+        
+    </div>
+
+
+    {% endif %}
+
+
+
+
+    
+
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+

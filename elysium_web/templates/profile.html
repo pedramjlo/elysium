@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+
+
+
+
+<div id="avatar-sett">
+    <img src="data:image/png;base64,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">
+</div>
+
+<h3>{{ full_name }}'s information</h3>
+
+
+<div class="user-data">
+
+    <h4>Full Name:</h4> {{ full_name }}
+    <br>
+    <div class="dotted-line"></div>
+
+
+
+    <h4>Username:</h4> {{ user.username }}
+    <br>
+    <div class="dotted-line"></div>
+
+
+
+
+    <h4>Email:</h4> {{ user.email }}
+    <br>
+    <div class="dotted-line"></div>
+
+
+
+
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" name="delete_account" id="delete_acc">
+        Delete Account
+    </button>
+</form>
+
+</div>
+
+
+<a href="/create_post" id="create" style="text-decoration: none;">Create a post</a>
+
+
+<form method="POST" id="deletePostsForm">
+    {% csrf_token %}
+    <button id="delete_all">Delete all posts</button>
+</form>
+
+
+
+<div class="profile-stat">
+    <h4>My recent blog posts</h4>
+
+    <ul>
+        {% for post in posts %}
+            <li><a href="{% url 'post' post.pk %}">{{ post.title }}</a></li>
+        {% empty %}
+            <li>You haven't created any posts</li>
+        {% endfor %}
+    </ul>        
+</div>
+
+
+
+
+<script>
+document.getElementById('delete_all').addEventListener('click', function(e) {
+    var numPosts = this.getAttribute('data-num-posts');
+    if (numPosts == 0) {
+        alert('There are no posts to delete.');
+        e.preventDefault();
+    } else {
+        e.preventDefault();
+        var form = document.getElementById('deletePostsForm');
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'delete_posts';
+        form.appendChild(input);
+        form.submit();
+    }
+});
+
+
+
+</script>
+
+{% endblock %}
+

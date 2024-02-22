@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/blog/create.css' %}">
+
+
+<div class="create-body">
+    <div id="title"><h2>Create a blog post</h2></div>
+    <div class="dotted-line"></div>
+    <div id="post-body">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+        
+            <button type="submit" class="submit-button">Done</button>
+            <button class="cancel-button" onclick="window.history.back()">Cancel</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
+

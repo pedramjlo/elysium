@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/blog/feed.css' %}">
+
+<div style="margin-left: 40%;" id="page-title">
+    <h2>Blog Posts</h2>
+</div>
+
+{% if user.is_authenticated %}
+<a href="/create_post" id="create" style="text-decoration: none;">Create a post</a>
+{% else %}
+<a href="/login" id="create" style="text-decoration: none;">Create a post</a>
+{% endif %}
+
+
+<div class="sort">
+    <form method="get">
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort" onchange="this.form.submit()">
+            <option value="-date_created" {% if request.GET.sort == "-date_created" %}selected{% endif %}>Newest</option>
+            <option value="date_created" {% if request.GET.sort == "date_created" %}selected{% endif %}>Oldest</option>
+            <option value="title" {% if request.GET.sort == "title" %}selected{% endif %}>Alphabetically</option>
+        </select>
+    </form>
+</div>
+
+
+
+<div class="feed-body">
+    {% if empty %}
+
+    <p>There is nothing to display</p>
+
+    {% else %}
+
+    {% for object in object_list %}
+    <div class="post">
+
+        <a href="{% url 'post' object.pk %}">{{ object.title }}</a> 
+
+        <div class="author">
+            
+            <p>by: <b>{{ object.author }}</b></p>
+            <p><b>{{ object.date_created|timesince }} ago</b></p>
+
+        </div>
+    </div>
+    {% endfor %}
+
+    {% endif %}
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

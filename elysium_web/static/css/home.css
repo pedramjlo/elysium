@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.unauth-navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 0.1px solid #83748D;
+    padding-top: 0;
+
+    background-color: #83748D;
+}
+
+#logo
+{
+    padding-left: 80px;
+    font-family: Cardo;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.unauth-navbar #about a {
+    padding-right: 80px;
+    margin-right: 40px; /* Adjust the value as needed */
+    color: white;
+    text-decoration: none;
+}
+
+
+.background img
+{
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+#form-title
+{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.login-form {
+    background-color: #FFF6FF;
+    position: absolute;
+    top: 45%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Centers the form */
+    /* Add additional styling as needed */
+    width: 300px; /* Adjust as needed */
+    padding: 20px; /* Adjust as needed */
+    background-color: #ffffff; /* Adjust as needed */
+    border: 1px solid #000000; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+}
+
+.login-form p
+{
+    text-align: center;
+}
+
+.login-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    color:white;
+    background-color: #4B8178;
+    border-radius: 5px;
+}
+
+
+#forgot 
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 90px;
+    margin-top: 1000px;
+}
+
+#gmail-login {
+    display: flex;
+    align-items: center; /* This will vertically center the items */
+    
+    padding-top: 10px;
+    padding-left: 55px;
+    margin: 5px;
+
+    font-weight: bold;
+
+
+}
+
+#gmail-login a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#gmail-login svg
+{
+    margin-right: 12px;
+}
+
+.no-account
+{   background-color: #FFF6FF;    
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 345px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.no-account a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: #4B8178;
+}

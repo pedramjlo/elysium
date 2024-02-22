@@ -1,0 +1,30 @@
+/* styles.css */
+.tag-detail {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Align items to the start of the container */
+    height: 100vh;
+}
+
+.tag-detail div {
+    border: 0.5px solid black;
+    padding: 20px;
+    margin-top: 30px;  /* Add a top margin */
+    background-color: #AFA3B1;
+    width: 50%;
+}
+
+.tag-detail h1 {
+    text-align: center;
+}
+
+.tag-detail h5 {
+    margin-bottom: 20px;
+}
+
+.tag-detail a {
+    display: block;  /* Make each link occupy its own line */
+    margin-bottom: 10px;  /* Add some space between links */
+}
+
+

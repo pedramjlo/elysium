@@ -1,0 +1,61 @@
+.all-tags {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Align items to the start of the container */
+    height: 110vh;
+}
+
+.all-tags div {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 30px;  /* Add a top margin */
+}
+
+.all-tags a {
+    text-decoration: none;
+}
+
+
+#create
+{
+    position: absolute;
+    top: 220px;
+    left: 590px;
+
+    height: 30px;
+    width: 100px;
+
+
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+    background-color: green;
+    color: white;
+
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+#profile-button
+{
+    position: absolute;
+    top: 270px;
+    left: 575px;
+
+    height: 30px;
+    width: 140px;
+
+
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+    background-color: #FFFF99;
+    color: black;
+
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+}

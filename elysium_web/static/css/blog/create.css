@@ -1,0 +1,86 @@
+.create-body
+{
+    margin-top:  -30px;
+}
+
+#title
+{
+    padding-top: 60px;
+    padding-left: 80px;
+}
+
+#post-body
+{
+    padding-top: -90px;
+}
+
+
+
+label {
+    transform: translateX(100px);
+    margin-left: 80px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style the input fields */
+input.post-title-field, textarea.post-content-field, textarea.post-tags-field {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+input.post-title-field
+{
+    margin-top: 100px;
+    margin-left: 175px;
+}
+
+
+
+textarea.post-content-field
+{
+    margin-left: 150px;
+}
+
+textarea.post-tags-field
+{
+    margin-left: 173px;
+    height: 30px;
+}
+
+.submit-button
+{
+    color: black;
+    font-weight: bold;
+    background-color: #7fff00;
+    border: 0.5 solid #7fff00;
+
+    width: 90px;
+
+    margin-bottom: 300px;
+    margin-left: 930px;
+    transform: translateY(-2px);
+
+}
+
+
+.cancel-button
+{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border: 0.5 solid red;
+
+    width: 90px;
+
+    margin-left: 1050px;
+    transform: translateY(-323px);
+
+}
+
+.dotted-line {
+    border-top: 1px dotted #000; /* Adjust color as needed */
+    width: 30%; /* Adjust width as needed */
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog/tag_detail.css' %}">
+
+
+<div class="tag-detail">
+    <div>
+        <h1>{{ tag.name }}</h1>
+        <br>
+
+        <h3>Posts with the tag "{{ tag.name }}": </h3>
+
+        {% for post in posts %}
+            <h5><a href="{% url 'post' post.pk %}" style="text-decoration: none;">{{ post.title }}</a></h5>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
